@@ -32,6 +32,7 @@
 Depending on the platform, the user settings file `settings.json` is located by default here:
 
 - Linux: `$HOME/.config/Code/User/settings.json`
+  - Copy file from repo to config folder: `cp ./settings.json $HOME/.config/Code/User/`
 - Mac: `$HOME/Library/Application Support/Code/User/settings.json`
 - Windows: `%APPDATA%\Code\User\settings.json`
 
