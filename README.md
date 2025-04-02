@@ -5,10 +5,10 @@
 - Error Lens
 - Better C++ Syntax
 - Better Comments
-- C/C++
 - C/C++ Extension Pack
-- C/C++ Themes
-- CMake Tools
+  - C/C++
+  - C/C++ Themes
+  - CMake Tools
 - Code Runner
 - Code Spell Checker
 - CodeSnap
