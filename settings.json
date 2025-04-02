@@ -1,0 +1,206 @@
+{
+  // python environment
+  "terminal.integrated.inheritEnv": false,
+  "python.terminal.activateEnvironment": false,
+  // code runner
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "cpp": "clang++ --std=c++20 -g *.cc -o $fileNameWithoutExt.o",
+    "python": "python3"
+  },
+  "code-runner.enableAppInsights": false,
+  "code-runner.fileDirectoryAsCwd": true,
+  // Python specific settings
+  "[python]": {
+    "editor.formatOnType": true, // automatic formatting after typing
+    "editor.rulers": [
+      79,
+      120
+    ]
+  },
+  // editor settings
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.bracketPairColorization.enabled": true,
+  "window.commandCenter": false,
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.location": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDelete": false,
+  "terminal.external.osxExec": "WezTerm.app",
+  // vim settings
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigation
+    // switch between buffers
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    // split
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    // panes
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    // Other
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    // toggle comment selection
+    {
+      "before": [
+        "leader",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  // git settings
+  "git.autofetch": true,
+  // Icons from the vscode-icons extension
+  "workbench.iconTheme": "vscode-icons",
+  // CodeSnap Extension
+  "codesnap.containerPadding": "1em",
+  "codesnap.target": "window",
+  "codesnap.showLineNumbers": false,
+  // Other settings
+  "redhat.telemetry.enabled": false,
+  "cmake.configureOnOpen": true,
+  "C_Cpp.default.cppStandard": "c++20",
+}
