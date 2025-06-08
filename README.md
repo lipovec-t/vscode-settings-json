@@ -37,4 +37,5 @@ Depending on the platform, the user settings file `settings.json` is located by 
 - Windows: `%APPDATA%\Code\User\settings.json`
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details
