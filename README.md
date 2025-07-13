@@ -26,6 +26,8 @@
 - Vim
 - vscode-icons
 - YAML
+- Log File Highlighter
+- Markdown Paste
 
 ## Usage
 
